@@ -1,0 +1,15 @@
+{
+  "name": "sr-shop-fullstack",
+  "version": "1.0.0",
+  "description": "SR SHOP - Trending Imported Goods E-Commerce Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node --watch server.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "seed": "cd server && node db/seeds.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
